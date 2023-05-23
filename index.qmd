@@ -27,6 +27,12 @@ income_groups_df <- read_rds("data/wb-income-groups.rds")
 
 ```
 
+```{r}
+income_groups_df %>% 
+  count(income_group) %>% 
+  gt()
+```
+
 # Basic Sanitation & GDP
 
 Data for the most recent year, basic sanitation in urban areas, calculate urban population, and join income groups.
